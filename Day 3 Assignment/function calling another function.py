@@ -1,7 +1,7 @@
 def factorial(n):
     fact=1
 
-    for i in range(1,n+1)
+    for i in range(1,n+1):
         fact=fact*i
     return fact
 
@@ -17,6 +17,7 @@ n=int(input("Enter a value :"))
 fct= factorial(n)
 print("The factorial of the number is :",fct)
 
-
-npr=nPr(
-
+for i in range(0,n+1):
+    for j in range(0,i+1):
+        print("the combination of the number is : ",nCr(i,j))  
+        print("the Permutations of the number is : ",nPr(i,j))
