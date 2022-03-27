@@ -1,11 +1,18 @@
 
-eid=input("enter employee id : ")
-name=input("Enter employee name :")
-salary=input("enter your salary :")
+ch="y"
+while(ch=="y"):
 
-#write to file, a stands for append
-f1=open("mydata.txt","a")
-f1.write(eid+","+salary+"/n")
-f1.close()
+    eid=input("enter employee id : ")
+    name=input("Enter employee name :")
+    salary=input("enter your salary :")
 
-print("Employee data saved successfully")
+    #write to file, a stands for append
+    f1=open("employeeData.txt","a")
+    print("/n")
+    f1.write(eid+","+name+","+salary+"\n")
+    f1.close()
+
+    print("Employee data saved successfully")
+    ch=input("Do you want to add another employee :y/n")
+    
+    
